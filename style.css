@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 20rem;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 1rem;
   border-radius: 1rem;
   text-align: center;
@@ -37,6 +37,10 @@ body {
 
 .text-main {
   text-align: left;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 .text-main h2 {
@@ -144,6 +148,32 @@ body {
   color: var(--orange);
   border-radius: 2rem;
   width: fit-content;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 0.5rem 1rem;
+}
+
+@media all and (max-width: 500px) {
+  .card {
+    max-width: 17rem;
+  }
+
+  .submit-btn button {
+    width: 273px;
+  }
+
+  .text-main h2 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .star-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .choice {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    font-size: 0.9rem;
+  }
 }
