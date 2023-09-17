@@ -1,0 +1,149 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(219, 33%, 21%);
+  --dark-blue: hsl(224, 37%, 16%);
+  --very-dark-blue: hsl(233, 17%, 10%);
+}
+
+html {
+  background-color: var(--very-dark-blue);
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  flex-direction: column;
+  align-items: center;
+  max-width: 20rem;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.text-main {
+  text-align: left;
+}
+
+.text-main h2 {
+  margin: 2rem 0 0 0;
+}
+
+.text-main p {
+  color: var(--light-grey);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.rating-choices {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.choice {
+  background-color: var(--medium-grey);
+  color: var(--light-grey);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#selected {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit-btn button {
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem;
+  background-color: var(--orange);
+  color: var(--white);
+  width: 320px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.submit-btn button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.star-icon {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 50%;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  background-image: url('/images/icon-star.svg');
+}
+
+.thank-you-img {
+  width: 163px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-image: url('/images/illustration-thank-you.svg');
+}
+
+.hidden {
+  display: none;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.user-rating {
+  background-color: var(--medium-grey);
+  color: var(--orange);
+  border-radius: 2rem;
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
